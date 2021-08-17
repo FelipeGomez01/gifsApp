@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { GifsModule } from './gifs/gifs.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -12,9 +13,11 @@ import { GifsModule } from './gifs/gifs.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
-    SharedModule,
-    GifsModule
+
+    GifsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
