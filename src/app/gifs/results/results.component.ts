@@ -15,7 +15,6 @@ export class ResultsComponent
 
   get results()
   {
-    console.log('1',this.gifsService.results);
     return this.gifsService.results;
   }
 }
